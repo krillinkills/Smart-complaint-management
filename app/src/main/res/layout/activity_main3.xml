@@ -8,8 +8,8 @@
 
     <EditText
         android:id="@+id/editTextTextPersonName"
-        android:layout_width="240dp"
-        android:layout_height="0dp"
+        android:layout_width="268dp"
+        android:layout_height="37dp"
         android:layout_marginTop="249dp"
         android:layout_marginBottom="59dp"
         android:ems="10"
@@ -25,10 +25,19 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="314dp"
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="433dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
