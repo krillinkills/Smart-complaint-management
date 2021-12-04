@@ -40,7 +40,7 @@
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="289dp"
-        android:layout_height="53dp"
+        android:layout_height="44dp"
         android:background="@drawable/edit_text"
         android:ems="10"
         android:hint="   Password"
@@ -57,7 +57,7 @@
         android:id="@+id/textView"
         android:layout_width="93dp"
         android:layout_height="29dp"
-        android:layout_marginBottom="108dp"
+        android:layout_marginBottom="80dp"
         android:gravity="center"
         android:text="Register"
         android:textSize="20sp"
@@ -66,5 +66,48 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.954" />
+        app:layout_constraintVertical_bias="0.731"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="91dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="Or"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="128dp"
+        android:layout_height="19dp"
+        android:gravity="right"
+        android:text="Forgot passowrd?"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.784"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintVertical_bias="0.151" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="237dp"
+        android:layout_height="38dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintVertical_bias="0.621"
+        tools:ignore="MissingConstraints" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
