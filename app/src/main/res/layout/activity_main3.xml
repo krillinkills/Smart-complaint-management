@@ -94,9 +94,11 @@
         android:textSize="15sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/spinner1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.812"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintVertical_bias="0.066"
-        tools:layout_editor_absoluteX="230dp" />
+        app:layout_constraintVertical_bias="0.066" />
 
     <Spinner
         android:id="@+id/spinner1"
