@@ -18,6 +18,7 @@ Spinner s1;
 
     ArrayAdapter aa;
 
+
     String[] ss1={"User", "Officer", "Admin"};
 
 
@@ -49,9 +50,40 @@ Spinner s1;
         aa=new ArrayAdapter(this, android.R.layout.simple_spinner_item,ss1);
         aa.setDropDownViewResource(android.R.layout.simple_spinner_item);
         s1.setAdapter(aa);
+     s1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+         @Override
+         public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+             if(position==0)
+             {
+                 b1.setOnClickListener(new View.OnClickListener() {
+                     @Override
+                     public void onClick(View v) {
+                         Intent i= new Intent(Login_pg.this,complaint_pg.class);
+                         startActivity(i);
+                     }
+                 });
+             }
+             if(position==1)
+             {
+                 b1.setOnClickListener(new View.OnClickListener() {
+                     @Override
+                     public void onClick(View v) {
+                         Intent i= new Intent(Login_pg.this,officer.class);
+                         startActivity(i);
+                     }
+                 });
+             }
+         }
+
+         @Override
+         public void onNothingSelected(AdapterView<?> parent) {
+
+         }
+     });
+
+    }
 
 
-}
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
