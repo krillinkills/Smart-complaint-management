@@ -12,15 +12,13 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 public class Login_pg extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-Button b1;
-TextView T1;
-Spinner s1;
+    Button b1;
+    TextView T1;
+    Spinner s1;
 
     ArrayAdapter aa;
 
-
     String[] ss1={"User", "Officer", "Admin"};
-
 
 
     @Override
@@ -37,14 +35,6 @@ Spinner s1;
     }
 });
     b1 = findViewById(R.id.button);
-    b1.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View v) {
-
-        Intent i = new Intent(Login_pg.this,complaint_pg.class);
-        startActivity(i);
-    }
-});
     s1=findViewById(R.id.spinner1);
         s1.setOnItemSelectedListener(this);
         aa=new ArrayAdapter(this, android.R.layout.simple_spinner_item,ss1);
